@@ -5,7 +5,7 @@
     --chelsea-gold: #dba111;
     --white: #ffffff;
     --light-grey: #f5f5f5;
-    --dark-grey: #333333;
+    --dark-blue: #000b31;
     --black: #000000;
     --shadow: rgba(0, 0, 0, 0.2);
 }
@@ -18,7 +18,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: var(--dark-grey);
+    color: var(--dark-blue);
     line-height: 1.6;
     background-color: var(--white);
     overflow-x: hidden;
@@ -431,7 +431,7 @@ section {
 
 .player-front p {
     font-size: 0.9rem;
-    color: var(--dark-grey);
+    color: var(--dark-blue);
 }
 
 .player-back h4 {
@@ -504,7 +504,7 @@ section {
 }
 
 .match-details h4 {
-    color: var(--dark-grey);
+    color: var(--dark-blue);
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -578,7 +578,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: var(--dark-grey);
+    background-color: var(--dark-blue);
     color: var(--white);
     padding: 3rem 2rem;
 }
