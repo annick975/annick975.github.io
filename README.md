@@ -21,4 +21,4 @@ This project is part of the **Hack & Slice 1-Month Coding Challenge** hosted by 
 
 1. Clone the repo:  
    ```bash
-   git clone https://github.com/your-username/chelsea-tribute.git
+   git clone https://github.com/annick975/annick975.github.io.git
