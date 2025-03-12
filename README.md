@@ -1,6 +1,6 @@
 # Chelsea FC Tribute Page ⚽💙  
 
-This project is part of the **[Hack & Slice 1-Month Coding Challenge]** hosted by **Youth Code Camp (https://github.com/Youth-codecamp)**. It is a **tribute webpage** dedicated to **Chelsea Football Club**, highlighting its history, legendary players, and achievements. Built using **HTML & CSS only**.  
+This project is part of the **Hack & Slice 1-Month Coding Challenge** hosted by **Youth Code Camp (https://github.com/Youth-codecamp)**. It is a **tribute webpage** dedicated to **Chelsea Football Club**, highlighting its history, legendary players, and achievements. Built using **HTML & CSS only**.  
 
 ## 🚀 Features  
 
