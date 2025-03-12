@@ -167,11 +167,12 @@ section {
 /* History Section */
 .history-section {
     background-color: var(--light-grey);
+    padding: 3rem 1rem;
 }
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -187,7 +188,7 @@ section {
 }
 
 .timeline-item {
-    padding: 1rem 0;
+    padding: 2rem 0;
     position: relative;
     width: 50%;
     margin-left: auto;
@@ -207,6 +208,7 @@ section {
     top: 50%;
     transform: translateY(-50%);
     right: -10px;
+    z-index: 2;
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
@@ -219,11 +221,73 @@ section {
     background-color: var(--white);
     border-radius: 5px;
     box-shadow: 0 3px 5px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: scale(1.03);
 }
 
 .timeline-content h3 {
     color: var(--chelsea-blue);
     margin-bottom: 0.5rem;
+}
+
+.timeline-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.history-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.history-img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        width: calc(100% - 40px);
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 10px;
+        right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .timeline-image {
+        height: 150px;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Trophy Section */
@@ -510,57 +574,7 @@ section {
     font-weight: 600;
 }
 
-/* Fixtures Section */
-.fixtures-section {
-    background-color: var(--light-grey);
-}
 
-.fixtures-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.fixture-table-container {
-    background-color: var(--white);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px var(--shadow);
-}
-
-.fixture-table-container h3 {
-    padding: 1rem;
-    background-color: var(--chelsea-blue);
-    color: var(--white);
-    text-align: center;
-}
-
-.fixture-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.fixture-table th,
-.fixture-table td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid var(--light-grey);
-}
-
-.fixture-table th {
-    background-color: var(--chelsea-light-blue);
-    color: var(--white);
-}
-
-.fixture-table tr:nth-child(even) {
-    background-color: rgba(3, 70, 148, 0.05);
-}
-
-.fixture-table tr:hover {
-    background-color: rgba(3, 70, 148, 0.1);
-}
 
 /* Fan Wall Section */
 .fan-section {
