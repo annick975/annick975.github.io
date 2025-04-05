@@ -1,0 +1,123 @@
+/* Minimal Style Sheet */
+:root {
+    --primary: #0077b6;
+    --light: #ffffff;
+    --dark: #333333;
+    --gray: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    background-color: var(--light);
+}
+
+/* Header */
+header {
+    height: 100vh;
+    background-color: var(--primary);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Destinations */
+.destination {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#santorini {
+    background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+#kyoto {
+    background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+#machu-picchu {
+    background-image: url('https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+#bora-bora {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+#safari {
+    background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    max-width: 400px;
+    border-radius: 4px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005a8c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--gray);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .destination {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem;
+    }
+    
+    .content {
+        max-width: 100%;
+    }
+} 
