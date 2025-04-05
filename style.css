@@ -1,4 +1,4 @@
-/* Minimal Style Sheet */
+
 :root {
     --primary: #0077b6;
     --light: #ffffff;
@@ -19,23 +19,33 @@ body {
     background-color: var(--light);
 }
 
-/* Header */
+
 header {
     height: 100vh;
     background-color: var(--primary);
     color: var(--light);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 300;
     letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 
-/* Destinations */
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+
 .destination {
     height: 100vh;
     background-size: cover;
@@ -97,18 +107,20 @@ button {
 button:hover {
     background-color: #005a8c;
 }
-
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
     background-color: var(--gray);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
     }
     
     .destination {
