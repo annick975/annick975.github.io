@@ -25,6 +25,6 @@ This project is a **minimalist travel showcase** highlighting 5 stunning destina
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/annick975/CFC_Tribute_Page.git
+   git clone https://github.com/annick975/annick975.github.io.git
    ```
 2. Open `index.html` in your browser
